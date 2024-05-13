@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Sintony:wght@400;700&display=swap");
+
+:root {
+  --main-bg-color: #343a40;
+  --main-white-color: #f8f9fa;
+  --main-box-shadow-color: #909090;
+  --main-icon-hover-color: #d63384;
+  --button-box-shadow-hover-color: #cc6699;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  color: var(--main-white-color);
+  margin-top: 1em;
+  margin-right: 4em;
+  margin-left: 4em;
+  font-family: "Sintony", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 1.4em;
+}
+
+/* Styling headings  */
+h1,
+h2,
+h3 {
+  font-weight: bold;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+h3 {
+  font-size: 1.3em;
+}
+
+strong {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+main > section:nth-of-type(1),
+main > section:nth-of-type(2),
+main > section:nth-of-type(3),
+ul,
+main > section:nth-of-type(3) > section {
+  display: flex;
+}
+
+main > section:nth-of-type(2) {
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+
+main > section:nth-of-type(1) {
+  gap: 6em;
+  align-items: center;
+}
+
+p {
+  line-height: 2em;
+}
+
+/* Styling download resume link */
+main > a {
+  display: block;
+  font-family: "Sintony", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  background-color: var(--main-white-color);
+  color: black;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  padding: 0.3em;
+  border-radius: 2em;
+  box-shadow: 0.625rem 0.3125rem 0.3125rem var(--main-box-shadow-color);
+  text-decoration: none;
+  width: 10em;
+  transition: transform 0.3s, background 0.3s, color 0.3s;
+}
+
+section + a:hover {
+  background-color: var(--main-icon-hover-color);
+  box-shadow: 0.625rem 0.3125rem 0.3125rem var(--button-box-shadow-hover-color);
+  transform: translateY(-10px);
+}
+
+/* Styling table  */
+td {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+}
+tr {
+  display: flex;
+  gap: 4em;
+  margin-bottom: 1em;
+}
+
+i {
+  font-size: 4em;
+}
+
+table {
+  margin-bottom: 6em;
+}
+
+/* Styling relevant courses section  */
+
+main > section:nth-of-type(3) {
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+
+ul {
+  flex-direction: column;
+  list-style-type: disc;
+}
+
+li {
+  padding: 0.4em;
+}
+
+/* styling header */
+header {
+  display: flex;
+  /* justify-content: space-evenly; */
+  /* width: 20em; */
+  gap: 2em;
+}
+header a {
+  text-decoration: none;
+  transition: transform 0.3s, background 0.3s, color 0.3s;
+}
+
+header i {
+  color: var(--main-white-color);
+}
+
+header i:hover {
+  color: var(--main-icon-hover-color);
+}
+
+header a:hover {
+  transform: translateY(-10px);
+}
+
+header a:nth-of-type(2) {
+  margin-right: 0.2em;
+}
+
+/* styling footer  */
+
+footer {
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+}
+
+/* styling profile image  */
+
+img {
+  border-radius: 50em;
+}
